@@ -3,7 +3,13 @@ import Image from "next/image";
 import Card from "@/components/Card";
 import Firstsection from "@/components/FirstSection";
 import SecondSection from "@/components/SecondSection";
-import { Feedback, InputSearch } from "@ama-pt/agora-design-system";
+import {
+  CardHighlightNewsletter,
+  Feedback,
+  InputEmailBar,
+  InputSearch,
+} from "@ama-pt/agora-design-system";
+import Contacto from "@/components/Contacto";
 
 export default function Home() {
   return (
@@ -33,6 +39,30 @@ export default function Home() {
         />
       </div>
       <div className="px-16 py-16">
+        <CardHighlightNewsletter
+          image={{
+            src: "https://www.portaldasfinancas.gov.pt/at/images/header_secondary/Landing_Banner_03.jpg",
+          }}
+          subtitle={
+            <span className="text-m-regular">
+              Semanalmente enviamos as novidades da AT para o seu email.
+            </span>
+          }
+          title={
+            <span className="text-2xl-bold">
+              Quer receber as nossas novidades?
+            </span>
+          }
+        >
+          <InputEmailBar
+            darkMode
+            hasLabel
+            label="Qual é o seu email?"
+            placeholder="Insira o seu email para subscrição..."
+          />
+        </CardHighlightNewsletter>
+      </div>
+      <div className="px-16 py-16">
         <Feedback
           darkMode
           evaluate={{
@@ -51,35 +81,7 @@ export default function Home() {
         />
       </div>
       <SecondSection />
-      <div className="px-16 py-16">
-        <div className="flex justify-between gap-16">
-          <div>
-            <img
-              src="https://www.portaldasfinancas.gov.pt/at/html/assets/images/AT56_0ss_ver01-130x80.png"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              src="https://www.portaldasfinancas.gov.pt/at/html/assets/images/AT56_direitos-do-contribuinte_ver01-180x60.png"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              src="https://www.portaldasfinancas.gov.pt/at/html/assets/images/AT56_apps-at_ver01-120x75.png"
-              alt=""
-            />
-          </div>
-          <div>sociais</div>
-          <div>
-            <img
-              src="https://www.portaldasfinancas.gov.pt/at/html/assets/images/AT56_contactos_ver01-200x60.png"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
+      <Contacto />
     </div>
   );
 }
