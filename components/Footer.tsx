@@ -35,23 +35,23 @@ export default function Footer() {
           links: [
             {
               children: "Enviar mensagem",
-              href: "?path=/docs/documentation-welcome--page",
+              href: "#",
               target: "_self",
             },
             {
               children: "Ver contactos",
-              href: "?path=/docs/documentation-welcome--page",
+              href: "#",
               target: "_self",
             },
             {
               children: "Ver locais de atendimento",
-              href: "?path=/docs/documentation-welcome--page",
+              href: "#",
               target: "_self",
             },
           ],
           title: "Precisa de ajuda com este serviço?",
         }}
-        copyright="© 2024 República Portuguesa. Todos os direitos reservados."
+        copyright="© 2024 made with ❤️ by Marcelo Alves."
         partnersLogos={[
           {
             image: {
@@ -59,7 +59,7 @@ export default function Footer() {
               src: "https://www.portaldasfinancas.gov.pt/at/html/assets/images/AT56_0ss_ver01-130x80.png",
             },
             link: {
-              href: "https://recuperarportugal.gov.pt/",
+              href: "#",
               target: "_blank",
               title: "Abre num novo separador",
             },
@@ -70,7 +70,7 @@ export default function Footer() {
               src: "https://www.portaldasfinancas.gov.pt/at/html/assets/images/AT56_direitos-do-contribuinte_ver01-180x60.png",
             },
             link: {
-              href: "https://www.portugal.gov.pt/pt/gc22",
+              href: "#",
               target: "_blank",
               title: "Abre num novo separador",
             },
@@ -81,7 +81,7 @@ export default function Footer() {
               src: "https://www.portaldasfinancas.gov.pt/at/html/assets/images/AT56_apps-at_ver01-120x75.png",
             },
             link: {
-              href: 'https://ec.europa.eu/info/strategy/recovery-plan-europe_pt"',
+              href: '#',
               target: "_blank",
               title: "Abre num novo separador",
             },
@@ -119,7 +119,7 @@ export default function Footer() {
             icon: "agora-line-instagram",
             iconHover: "agora-solid-instagram",
             link: {
-              href: "https://recuperarportugal.gov.pt/",
+              href: "#",
               target: "_blank",
               title: "Instagram",
             },
@@ -128,7 +128,7 @@ export default function Footer() {
             icon: "agora-line-youtube",
             iconHover: "agora-solid-youtube",
             link: {
-              href: "https://recuperarportugal.gov.pt/",
+              href: "#",
               target: "_blank",
               title: "Youtube",
             },
@@ -137,35 +137,26 @@ export default function Footer() {
         usefulLinks={[
           {
             children: "Acessibilidade",
-            href: "/acessibilidade",
+            href: "#",
             target: "_self",
           },
           {
             children: "Termos e Condições",
-            href: "/termos-e-condicoes",
+            href: "#",
             target: "_self",
           },
           {
             children: "Política de Privacidade",
-            href: "/politica-de-privacidade",
+            href: "#",
             target: "_self",
           },
           {
             children: "Definições de Cookies",
-            href: "/cookies",
+            href: "#",
             target: "_self",
           },
         ]}
       />
     </footer>
-    // <div className="bg-primary-900 px-16 py-16">
-    //   <div className="container mx-auto">
-    //     <div className=" flex justify-center p-8">
-    //       <div className="flex gap-16">
-    //         <span className="text-white">made with ❤️ by Marcelo Alves</span>
-    //       </div>
-    //     </div>
-    //   </div>
-    // </div>
   );
 }

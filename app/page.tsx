@@ -3,7 +3,6 @@ import Image from "next/image";
 import Card from "@/components/Card";
 import Firstsection from "@/components/FirstSection";
 import SecondSection from "@/components/SecondSection";
-import Contacto from "@/components/Contacto";
 import NewsLetter from "@/components/NewsLetter";
 import FeedbackApp from "@/components/FeedbackApp";
 import Search from "@/components/Search";

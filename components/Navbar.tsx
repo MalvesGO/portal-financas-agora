@@ -3,18 +3,19 @@ import { Button } from "@ama-pt/agora-design-system";
 import { useEffect, useState } from "react";
 
 export default function Navbar() {
-
   const [date, setDate] = useState("Carregando data...");
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      const date = new Date();
-      const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-      setDate(date.toLocaleDateString('pt-PT', options));
-    }, 1000);
-    return () => clearInterval(interval);
+    const date = new Date();
+    setDate(
+      date.toLocaleDateString("pt-PT", {
+        weekday: "long",
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+      })
+    );
   }, []);
-
 
   return (
     <div className="bg-primary-900">
