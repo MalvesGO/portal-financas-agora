@@ -21,7 +21,7 @@ export default function Home() {
       <Search />
       <Card />
       <Firstsection />
-      <div className="flex justify-center">
+      <div className="flex justify-center bg-white">
         <Image
           src="https://www.portaldasfinancas.gov.pt/at/html/assets/images/logo_premio_salarial.png"
           alt=""
