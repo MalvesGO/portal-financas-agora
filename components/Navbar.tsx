@@ -1,6 +1,5 @@
 "use client";
 import { Button } from "@ama-pt/agora-design-system";
-import Image from "next/image";
 import { useEffect, useState } from "react";
 
 export default function Navbar() {
