@@ -24,7 +24,7 @@ export default function Navbar() {
           <span className="text-white">{date}</span>
           <div className="flex gap-16">
             <Button appearance="outline" variant="neutral" darkMode>
-              Registar se
+              Registar-se
             </Button>
             <Button darkMode variant="neutral">
               Iniciar Sessão
