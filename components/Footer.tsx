@@ -4,7 +4,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="mt-auto px-16">
+    <footer className="px-16 mt-32">
       <FederatedFooter
         badgeImage={{
           image: {
@@ -28,7 +28,7 @@ export default function Footer() {
             title: "Abre num novo separador",
           },
         }}
-        caption="O ePortugal é financiado pelo Plano de Recuperação e Resiliência e o Next Generation EU."
+        caption="O Portal das Finanças é um serviço público que permite a consulta e a realização de operações fiscais online."
         card={{
           description:
             "Caso necessite de ajuda durante a realização do serviço, poderá utilizar qualquer um dos canais de comunicação à sua disposição e sempre que necessário esclareça todas as dúvidas ou partilhe uma sugestão.",
@@ -51,7 +51,7 @@ export default function Footer() {
           ],
           title: "Precisa de ajuda com este serviço?",
         }}
-        copyright="© 2023 República Portuguesa. Todos os direitos reservados."
+        copyright="© 2024 República Portuguesa. Todos os direitos reservados."
         partnersLogos={[
           {
             image: {
