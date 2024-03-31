@@ -1,5 +1,6 @@
-import type { Config } from "tailwindcss";
 import { AgoraTailwindConfig } from "@ama-pt/agora-design-system";
+import type { Config } from "tailwindcss";
+
 const TailwindConfig: Config = {
   content: ["src/**/*.tsx"],
   theme: {
